@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="platform/art" />
+  <project path="art" name="art" remote="af" />
+
+  <remove-project name="platform/build/release" />
+  <project path="build/release" name="build_release" remote="af" />
+
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="frameworks_base" remote="af" />
+
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="frameworks_native" remote="af" />
+
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="af" />
+
+  <remove-project name="platform/packages/apps/Contacts" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="af" />
+
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="af" />
+
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="af" />
+
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="af" />
+
+  <remove-project name="platform/packages/modules/IntentResolver" />
+  <project path="packages/modules/IntentResolver" name="packages_modules_IntentResolver" remote="af" />
+
+  <remove-project name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="af" />
+
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="af" />
+
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="af" />
+</manifest>

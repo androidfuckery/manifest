@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="aosp"
+          fetch="https://android.googlesource.com/"
+          revision="android16-release" />
+  <default remote="aosp" />
+  <include name="aosp.xml" />
+
+  <remote name="af"
+          fetch="https://github.com/androidfuckery/"
+          revision="baklava" />
+  <include name="af.xml" />
+</manifest>
