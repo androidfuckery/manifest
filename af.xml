@@ -6,6 +6,12 @@
   <remove-project name="platform/build/release" />
   <project path="build/release" name="build_release" remote="af" />
 
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="build_soong" remote="af" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="frameworks_base" remote="af" />
 
