@@ -50,6 +50,9 @@
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="af" />
 
+  <remove-project name="platform/packages/modules/adb" />
+  <project path="packages/modules/adb" name="packages_modules_adb" remote="af" />
+
   <remove-project name="platform/packages/modules/Virtualization" />
   <project path="packages/modules/Virtualization" name="packages_modules_Virtualization" remote="af" />
 
