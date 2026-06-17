@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="aosp"
+          fetch="https://android.googlesource.com/"
+          revision="android17-release" />
+  <default remote="aosp" />
+
+  <remote name="af"
+          fetch="https://github.com/androidfuckery/"
+          revision="cinnamon_bun" />
+
+  <include name="aosp.xml" />
+
+  <remove-project name="platform/art" />
+  <project path="art" name="art" remote="af" />
+
+  <remove-project name="platform/build/release" />
+  <project path="build/release" name="build_release" remote="af" />
+
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="build_soong" remote="af" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="frameworks_base" remote="af" />
+
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="frameworks_native" remote="af" />
+
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="af" />
+
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="af" />
+
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="af" />
+
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="af" />
+
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="af" />
+
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="system_core" remote="af" />
+</manifest>
